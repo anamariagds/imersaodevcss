@@ -7,44 +7,81 @@
 
 body{
   background-color: #a52a2a;
-  backgroun-size: auto 100vh;
-  font-family: Arial;  
+  background-size: auto 100vh;
+  font-family: 'Overpass Mono', monospace;
+  height: 100vh;
+  font-size: 10px;  
    
 }
+/*Se a tela tiver pelo menos 400px vai carregar*/
+/*breaking point*/
+
+@media(min-width: 400px){
+  body{
+   font-size: 14px;  
+  }
+}
+
+@media(min-width: 600px){
+  body{
+   font-size: 18px;  
+  }
+}
+
+@media(min-width: 1200px){
+  body{
+   font-size: 20px;  
+
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu{
-  background-color: whitesmoke;
-  -webkit-filter: opacity(0.7);
-  
+  background-color: #e7c02b;
+  -webkit-filter: opacity(0.89);
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 .menu ul{
   display: flex;
-  justify-content:space-around;
-  
-  
+  justify-content: space-around;
 }
 .menu li{
   list-style: none;
 }
 
 a{
-  color:teal;
+  color: whitesmoke;
   text-decoration: none;
 }
 a:hover{
   text-decoration:underline;
 }
+.menu a{
+  display: block;
+  padding: 10px 20px;
+}
+
+
 img{
   width:250px;
   height:250px;
-  border:2px ridge #bfbfbf;
-  border-radius: 150px;
  
 }
 .displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 1px -15px 45px 0px #808080;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px -15px 45px 0px #808080;
+  border:2px ridge #bfbfbf;
+  border-radius: 150px;
   
 }
 
@@ -54,6 +91,24 @@ img{
   color: GHOSTWHITE;
   text-align: center;
 }
+
+.site-title{
+  font-size: 2em; 
+  font-family: 'Abril Fatface', cursive;
+
+}
+
 .site-subtitle{
   font-style: italic;
+  line-hight: 1.5em;
+}
+
+.portfolio h2{
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 180px;
 }
