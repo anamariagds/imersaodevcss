@@ -76,13 +76,13 @@ img{
  
 }
 .displayed {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 1px -15px 45px 0px #808080;
   border:2px ridge #bfbfbf;
-  border-radius: 150px;
-  
+  border-radius: 150px;  
+  align-items: center;
 }
 
 .site-subtitle,
@@ -100,7 +100,7 @@ img{
 
 .site-subtitle{
   font-style: italic;
-  line-hight: 1.5em;
+  line-height: 1.5em;
 }
 .portfolio {
   background-color: lightgreen;
