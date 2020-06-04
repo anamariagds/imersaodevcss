@@ -9,6 +9,7 @@ body{
   background-color: #a52a2a;
   background-size: auto 100vh;
   font-family: 'Overpass Mono', monospace;
+  color: whitesmoke;
   height: 100vh;
   font-size: 10px;  
    
@@ -44,7 +45,7 @@ header{
 
 .menu{
   background-color: #e7c02b;
-  -webkit-filter: opacity(0.89);
+  -webkit-filter: opacity(0.85);
   position: fixed;
   width: 100vw;
   top: 0;
@@ -77,19 +78,13 @@ a:hover{
 }
 
 
-img{
-  width:250px;
-  height:250px;
- 
-}
-.displayed {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 1px -15px 45px 0px #808080;
-  border:2px ridge #bfbfbf;
-  border-radius: 150px;  
-  align-items: center;
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+  border-radius: 50%;
+  width: 278px;
+  height: 278px;
 }
 
 .site-subtitle,
@@ -153,7 +148,7 @@ img{
 
 @media(min-width: 560px){
   .grid{
-    grid-template-columns: 240px 240px 240px;
+    grid-template-columns: 240px 240px;
   }
   
 }
@@ -165,6 +160,15 @@ img{
     height: calc(100vh - 8em - 48px);
   }
   
+}
+@media(min-width: 1200px){
+  .grid{
+    grid-template-columns: repeat(4,240px);
+    justify-content: center;
+    
+  }
+  
+
 }
 
 .portfolio figure{
